@@ -1,0 +1,19 @@
+{
+  "name": "mangrow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeeppachatgmailcom/ManGrow.git"
+  },
+  "author": "Sandeep Pachat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandeeppachatgmailcom/ManGrow/issues"
+  },
+  "homepage": "https://github.com/sandeeppachatgmailcom/ManGrow#readme"
+}
