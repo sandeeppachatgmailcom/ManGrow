@@ -1,7 +1,26 @@
-import  db from './src/1.frameWork&Drivers/Web/mongoDB' 
-import start from './src/1.frameWork&Drivers/Web/nodeServer'
+import express, { Request, Response } from 'express';
 
-db();
-start()
+class NodeServer {
+    private app = express();
+    private port = 7000;
 
+    constructor() {
+        this.app.use(express.json());
+        this.app.use(express.urlencoded({ extended: true }));
+        this.app.get('/',(req:Request,res:Response)=>{
+            console.log('hello')
+        })
+    }
 
+    public start() {
+        this.app.listen(this.port, () => {
+            console.log(`Server is listening on port ${this.port}`);
+        });
+    }
+
+}
+
+const server = new NodeServer();
+server.start();
+
+export default NodeServer;
